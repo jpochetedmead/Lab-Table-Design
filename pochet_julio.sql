@@ -169,7 +169,7 @@ VALUES (1234, 'OALLEN TIRE SERVICE INC', '104 MEMORY LN', 'YORK', 'PA', 17602, '
 (6789, 'PEP BOYS #0364', '1700 FRUITVILLE PIKE', 'LANCASTER', 'PA', 17601, '717-291-0450', 53, 4.7, 'Sat | Mon-Fri | Sun', '7:30 - 8:00 | 7:30 - 9:00 | 9:00 - 6:00');
 
 
--- This sales_orders table has three foreign keys (customer_id, product_id, installers_id)]
+-- This sales_orders table has three foreign keys linking (customer_id, product_id, installers_id)]
 CREATE TABLE sales_orders (
   order_number bigint PRIMARY KEY, -- (PK) order_number
   customer_id bigint REFERENCES customers(customer_id), -- (FK) customer_id
